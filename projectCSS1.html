@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My CSS First Project</title>
+    <link rel="stylesheet" href="Style2.css">
+    <style>
+        body{
+            color: white;
+            margin:0px;
+            padding :0px;
+            background :  url('gym.jpg');
+        }
+        .left{
+display: inline-block;
+            border: 2px solid red;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+        .mid{
+display: block;
+width: 33%;
+margin: 12px auto;
+
+border: solid green;
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+border: sold yellow;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 13px;
+        }
+        .navbar li a:hover,.navbar li a a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+<!-- left box for logo -->
+        <div class="left">
+<p>this is my left block</p>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+<p>this is my mid block</p>
+<ul class="navbar">
+    <li><a href ="#" class="active">Home</a></li>
+    <li><a href ="#">About Us</a></li>
+    <li><a href ="#">Fitness Calculator</a></li>
+    <li><a href ="#">Contact Us</a></li>
+  
+</ul>
+     
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+<p>this is my right block</p>
+        </div>
+    </header>
+
+</body>
+</html>
